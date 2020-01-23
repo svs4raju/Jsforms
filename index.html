@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form name="studentForm"  onsubmit="return validate()" action="">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname"  name="fname" />
+      <span id="fnameWarn"></span>
+
+      <label for="lname">last Name:</label>
+      <input type="text" id="lname"   />
+      <span id="lnameWarn"></span>
+
+      <label for="mail"> Email:</label>
+      <input type="email" id="mail"  />
+      <span id="mailWarn"></span>
+
+      <label for="numbr">Number:</label>
+      <input type="number" min="0" id="num"  />
+      <span id="numWarn"></span>
+
+      <div class="genderGrup tb_margin">
+        <label for="gender"> Gender:</label>
+        <label for="radio">Male</label`>
+        <input type="radio" value="male" name="gender" checked/>
+        <label for="radio">Female</label>
+        <input type="radio" value="female" name="gender" />
+      </div>
+
+      <div>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob"/>
+      </div>
+
+      <label for="addrs"> Address:</label>
+      <textarea rows="5" id="addrs"></textarea>
+      <span id="addrsWarn"></span>
+
+      <div class="attachFiles tb_margin">
+        <label for="file"> Resume: </label>
+        <input
+          type="file"
+          id="file"
+          accept="application/pdf, application/doc ,application/vnd.ms-excel"
+          
+        />
+        <span>Only DOC, PDF files and less 2mb</span>
+      </div>
+
+      <div class="selectFields tb_margin">
+        <label for="intrests">Intrested Field: </label>
+
+        <select id="intrests">
+          <option value="marketing">Marketing</option>
+          `<option value="software">Software</option>
+          <option value="Hardware">Hardware</option>
+        </select>
+      </div>
+
+      <div class="btngrp tb_margin">
+        <input type="reset" />
+        <input type="submit" target="_blank"/>
+      </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

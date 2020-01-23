@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif, "Times New Roman", Times, serif;
+  background-image: linear-gradient(135deg, #3f1a62, #06192f);
+}
+
+.tb_margin {
+  margin: 30px 0;
+}
+
+span {
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto 0;
+  padding: 50px 30px 50px 50px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 600px){
+  form{
+    width: 70%;
+  }
+  input[type="submit"]{
+    margin-top: 20px;
+  }
+}
+
+input:not([type="radio"]) {
+  padding: 10px 10px 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(24, 23, 23);
+  outline-style: none;
+  font-size: 18px;
+  width: 70%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 15px 40px;
+  background-image: linear-gradient(135deg, #769ecc, #3f1a62);
+  border-radius: 27px;
+  border: none;
+  width: unset;
+  color: white;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+input[type="date"] {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+input:-webkit-autofill::selection {
+  background: none !important;
+}
+
+input + span {
+  margin: 5px 0 30px;
+  display: inline-block;
+}
+
+textarea {
+  padding: 5px 5px 10px;
+  margin: 10px 0;
+  font-family: sans-serif, "Times New Roman", Times, serif;
+  resize: none;
+  border: 1px solid black;
+  outline-style: none;
+  width: 70%;
+}
+
+.attachFiles > input {
+  width: 40%;
+  font-size: 16px;
+}
+.btngrp {
+  text-align: center;
+}
+
+select {
+  font-size: 16px;
+}
+
+div > label + label,
+div > input + label,
+div > label + input {
+  margin: 0 0 0 20px;
+  display: inline-block;
+}
